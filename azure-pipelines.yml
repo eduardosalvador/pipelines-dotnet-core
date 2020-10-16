@@ -5,7 +5,7 @@
 
 trigger:
 - master
-. release
+- release
 
 pool: 'Salvador Local'
 
