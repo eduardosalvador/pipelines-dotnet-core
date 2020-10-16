@@ -13,10 +13,10 @@ variables:
 jobs:
   - template: params.template.yml
     parameters:
-      jobName: 'JOB A'
+      jobName: 'job_01'
       poolName: 'Salvador Local'
   
   - template: params.template.yml
     parameters:
-      jobName: 'JOB B'
+      jobName: 'job_2'
       poolName: 'Salvador Local'
