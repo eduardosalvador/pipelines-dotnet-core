@@ -6,7 +6,7 @@ parameters:
 
 jobs:
   - job: ${{ parameters.jobName }}
-  pool: ${{ parameters.poolName }}
-  steps:
-    - script: echo ${{ parameters.jobName }}
-    - script: echo ${{ parameters.poolName }}
+    pool: ${{ parameters.poolName }}
+    steps:
+      - script: echo ${{ parameters.jobName }}
+      - script: echo ${{ parameters.poolName }}
