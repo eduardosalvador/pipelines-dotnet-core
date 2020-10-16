@@ -7,6 +7,11 @@ trigger:
 - master
 - develop
 
+extends:
+  template: params.template.yml
+  parameters:
+    shouldPrint: true
+
 pool: 'Salvador Local'
 
 variables:
