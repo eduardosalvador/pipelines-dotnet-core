@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  Salvador Local
+  vmImage: 'ubuntu-latest'
 
 variables:
   buildConfiguration: 'Release'
