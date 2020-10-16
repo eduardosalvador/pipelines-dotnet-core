@@ -4,4 +4,5 @@ parameters:
     default: true
 
 steps:
-  - script: echo "SHOULD_PRINT: $shouldPrint"
+  - script: echo SHOULD_PRINT
+  - script: echo ${{ parameters.shouldPrint }}
