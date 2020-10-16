@@ -1,7 +1,7 @@
 parameters:
   - name: jobName
     default: ''
-  - pool: poolName
+  - name: poolName
     default: 'Salvador Local'
 
 jobs:
