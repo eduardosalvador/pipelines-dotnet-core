@@ -5,9 +5,9 @@
 
 trigger:
 - master
+. release
 
-pool:
-  vmImage: 'ubuntu-latest'
+pool: 'Salvador Local'
 
 variables:
   buildConfiguration: 'Release'
