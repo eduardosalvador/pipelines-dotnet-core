@@ -34,4 +34,6 @@ Privacy information can be found at https://privacy.microsoft.com/en-us/
 Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
 
+https://pesalvador.visualstudio.com/Pipelines%20Spielwiese/_apis/build/status/eduardosalvador.pipelines-dotnet-core?branchName=master
+
 [![Build Status](https://pesalvador.visualstudio.com/Pipelines%20Spielwiese/_apis/build/status/eduardosalvador.pipelines-dotnet-core?branchName=master)](https://pesalvador.visualstudio.com/Pipelines%20Spielwiese/_build/latest?definitionId=3&branchName=master)
