@@ -1,0 +1,7 @@
+parameters:
+  - name: shouldPrint
+    type: boolean
+    default: true
+
+steps:
+  - script: echo "SHOULD_PRINT: $shouldPrint"
