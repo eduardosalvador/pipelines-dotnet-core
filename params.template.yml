@@ -1,8 +1,12 @@
 parameters:
-  - name: shouldPrint
-    type: boolean
-    default: true
+  - name: jobName
+    default: ''
+  - pool: poolName
+    default: 'Salvador Local'
 
-steps:
-  - script: echo SHOULD_PRINT
-  - script: echo ${{ parameters.shouldPrint }}
+jobs:
+  - job: ${{ parameters.jobName }}
+  pool: ${{ parameters.poolName }}
+  steps:
+    - script: echo ${{ parameters.jobName }}
+    - script: echo ${{ parameters.poolName }}
