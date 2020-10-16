@@ -7,13 +7,16 @@ trigger:
 - master
 - develop
 
-extends:
-  template: params.template.yml
-  parameters:
-    shouldPrint: true
-
-pool: 'Salvador Local'
-
 variables:
   buildConfiguration: 'Release'
 
+jobs:
+  - template: params.template.yml
+    parameters:
+      jobName: 'JOB A'
+      poolName: 'Salvador Local'
+  
+  - template: params.template.yml
+    parameters:
+      jobName: 'JOB B'
+      poolName: 'Salvador Local'
