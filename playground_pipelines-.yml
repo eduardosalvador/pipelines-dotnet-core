@@ -7,16 +7,28 @@ trigger:
 - master
 - develop
 
-variables:
-  buildConfiguration: 'Release'
-
-jobs:
-  - template: params.template.yml
-    parameters:
-      jobName: 'job_01'
-      poolName: 'Salvador Local'
-  
-  - template: params.template.yml
-    parameters:
-      jobName: 'job_02'
-      poolName: 'Salvador Local'
+stages:
+- stage: 'Stage_01'
+  displayName: 'Stage 01'
+  pool: 'Salvador_Local'
+  jobs:
+  - job: 
+    displayName: 'State 01 | Job 01'
+    steps:
+    - script: echo 'State 01 | Job 01'
+  - job:
+    displayName: 'State 01 | Job 02'
+    steps:
+    - script: echo 'State 01 | Job 02'
+- stage: 'Stage_02'
+  displayName: 'Stage 02'
+  pool: 'Salvador_Local'
+  jobs:
+  - job: 
+    displayName: 'State 02 | Job 01'
+    steps:
+    - script: echo 'State 02 | Job 01'
+  - job:
+    displayName: 'State 02 | Job 02'
+    steps:
+    - script: echo 'State 02 | Job 02'
