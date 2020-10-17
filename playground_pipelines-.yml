@@ -10,7 +10,7 @@ trigger:
 stages:
 - stage: 'Stage_01'
   displayName: 'Stage 01'
-  pool: 'Salvador_Local'
+  pool: 'Salvador Local'
   jobs:
   - job: 
     displayName: 'State 01 | Job 01'
@@ -22,7 +22,7 @@ stages:
     - script: echo 'State 01 | Job 02'
 - stage: 'Stage_02'
   displayName: 'Stage 02'
-  pool: 'Salvador_Local'
+  pool: 'Salvador Local'
   jobs:
   - job: 
     displayName: 'State 02 | Job 01'
